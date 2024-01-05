@@ -13,4 +13,9 @@ class Conta {
     public double getSaldo() {
         return saldo;
     }
+
+    @Override
+    public String toString() {
+        return "Conta com saldo: " + saldo;
+    }
 }
