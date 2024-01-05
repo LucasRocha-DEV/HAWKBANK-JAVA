@@ -32,6 +32,24 @@ public class CriaConta {
 
         segundaconta.titular = "Maria";
         System.out.println("Titular:" +segundaconta.titular);
+
+        segundaconta.agencia = 1234;
+        System.out.println("agencia:" +segundaconta.agencia);
+
+        segundaconta.numero = 123456;
+        System.out.println("numero da conta:" +segundaconta.numero);
+
+        segundaconta.saldo = 200;
+        System.out.println("saldo inicial: " + segundaconta.saldo);
+
+        segundaconta.saldo += 100;
+        System.out.println("alteração:" + segundaconta.saldo);
+
+        segundaconta.saldo -= 50;
+        System.out.println("atual:" + segundaconta.saldo);
+
+        System.out.println("!!!primeira conta tem: " + primeiraconta.saldo + "!!!");
+        System.out.println("!!!segunda conta tem: " + segundaconta.saldo + "!!!");
     }
     
 }
