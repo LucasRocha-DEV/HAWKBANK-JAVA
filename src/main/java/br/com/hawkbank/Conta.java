@@ -1,7 +1,7 @@
 package br.com.hawkbank;
 
 class Conta {
-    double saldo;
+    double saldo = 100;
     int agencia;
     int numero;
     String titular;

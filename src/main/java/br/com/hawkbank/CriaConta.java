@@ -2,6 +2,8 @@ package br.com.hawkbank;
 
 public class CriaConta {
     public static void main(String[] args) {
+        System.out.println("primeira conta:");
+        
         Conta primeiraconta = new Conta();
         
         primeiraconta.titular = "João";
@@ -22,7 +24,11 @@ public class CriaConta {
         primeiraconta.saldo -= 50;
         System.out.println("atual:" + primeiraconta.saldo);
 
+        System.out.println();
+        System.out.println();
+        
         // segunda conta
+        System.out.println("segunda conta:");
 
         Conta segundaconta = new Conta();
 
@@ -34,8 +40,8 @@ public class CriaConta {
 
         segundaconta.numero = 123456;
         System.out.println("numero da conta:" + segundaconta.numero);
-
-        segundaconta.saldo = 200;
+        
+        segundaconta.saldo = 500;
         System.out.println("saldo inicial: " + segundaconta.saldo);
 
         segundaconta.saldo += 100;
