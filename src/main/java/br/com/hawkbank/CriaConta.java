@@ -1,20 +1,17 @@
 package br.com.hawkbank;
 
 public class CriaConta {
-
     public static void main(String[] args) {
-        
-        
-        conta primeiraconta = new conta();
+        Conta primeiraconta = new Conta();
         
         primeiraconta.titular = "João";
-        System.out.println("Titular:" +primeiraconta.titular);
+        System.out.println("Titular:" + primeiraconta.titular);
 
         primeiraconta.agencia = 1234;
-        System.out.println("agencia:" +primeiraconta.agencia);
+        System.out.println("agencia:" + primeiraconta.agencia);
 
         primeiraconta.numero = 123456;
-        System.out.println("numero da conta:" +primeiraconta.numero);
+        System.out.println("numero da conta:" + primeiraconta.numero);
         
         primeiraconta.saldo = 200;
         System.out.println("saldo inicial: " + primeiraconta.saldo);
@@ -25,19 +22,18 @@ public class CriaConta {
         primeiraconta.saldo -= 50;
         System.out.println("atual:" + primeiraconta.saldo);
 
-        
+        // segunda conta
 
-        
-        conta segundaconta = new conta();
+        Conta segundaconta = new Conta();
 
         segundaconta.titular = "Maria";
-        System.out.println("Titular:" +segundaconta.titular);
+        System.out.println("Titular:" + segundaconta.titular);
 
         segundaconta.agencia = 1234;
-        System.out.println("agencia:" +segundaconta.agencia);
+        System.out.println("agencia:" + segundaconta.agencia);
 
         segundaconta.numero = 123456;
-        System.out.println("numero da conta:" +segundaconta.numero);
+        System.out.println("numero da conta:" + segundaconta.numero);
 
         segundaconta.saldo = 200;
         System.out.println("saldo inicial: " + segundaconta.saldo);
@@ -50,6 +46,11 @@ public class CriaConta {
 
         System.out.println("!!!primeira conta tem: " + primeiraconta.saldo + "!!!");
         System.out.println("!!!segunda conta tem: " + segundaconta.saldo + "!!!");
+        
+        Transferir.transferir(primeiraconta, 50, segundaconta);
+
+        System.out.println("!!!primeira conta tem: " + primeiraconta.saldo + "!!!");
+        System.out.println("!!!segunda conta tem: " + segundaconta.saldo + "!!!");
     }
-    
+
 }
